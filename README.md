@@ -31,13 +31,13 @@ connection = sge.simpleetl(
   private_key = 'some private key'
 )
 
-files = connection.fetch('/remote/dir/path') // Create local copies of child files at specified remote path
+files = connection.fetch('/remote/dir/path') # Create local copies of child files at specified remote path
 
-transform_file('ExampleFile.txt') // Transform local file 
+transform_file('ExampleFile.txt') # Transform local file 
 
-connection.delete('/remote/dir/path', 'ExampleFile.txt') // Delete remote copy of file as it will be replaced
+connection.delete('/remote/dir/path', 'ExampleFile.txt') # Delete remote copy of file as it will be replaced
 
-connection.upload('/remote/dir/path', 'ExampleFile.txt') // Upload local copy of file to same location as original
+connection.upload('/remote/dir/path', 'ExampleFile.txt') # Upload local copy of file to same location as original
 
 ```
 
