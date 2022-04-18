@@ -83,7 +83,6 @@ class SimpleETL:
         Parameters:
             source_path (string): Path to parent directory containing target files
         Returns:
-            file_list (any[]): List of file objects retrieved from source_path
         """
         file_list = []
 
