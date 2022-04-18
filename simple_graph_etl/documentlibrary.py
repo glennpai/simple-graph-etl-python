@@ -36,7 +36,6 @@ class DocumentLibrary:
         Returns base URL used in most ETL functions via the Graph API
 
         Parameters:
-
         Returns:
             URL string constructed from site and res IDs
         """

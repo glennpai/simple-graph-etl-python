@@ -5,7 +5,7 @@ Minimal wrapper lib for Python ETLs using Microsoft's Graph API
 Designed with intent for use in Ohio University Python scripts interacting with the Graph API
 
 ## Example
-Example document library structure: 
+### Example document library structure: 
 ```
 remote
 └──dir
@@ -13,11 +13,11 @@ remote
       └──ExampleFile.txt
 ```
 
-Example ETL:
+### Example ETL:
 ```Python
 import simple_graph_etl as sge
 
-documentLibrary = sge.documentlibrary(
+documentLibrary = sge.DocumentLibrary(
   client_id = 'some client ID',
   site_id = 'some site ID',
   res_id = 'some res ID',
@@ -25,7 +25,7 @@ documentLibrary = sge.documentlibrary(
   scope = 'some scope'
  )
  
-connection = sge.simpleetl(
+connection = sge.SimpleETL(
   library = documentLibrary,
   thumbprint = 'some thumbprint',
   private_key = 'some private key'
@@ -44,5 +44,11 @@ connection.upload('/remote/dir/path', 'ExampleFile.txt') # Upload local copy of 
 ## TODO
 
 Add tests
+
 Peer review
+
+Create detailed usage spec docs
+
 Publish
+
+Move to enterprise space?
