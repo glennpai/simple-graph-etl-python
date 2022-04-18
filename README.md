@@ -31,7 +31,7 @@ connection = sge.simpleetl(
   private_key = 'some private key'
 )
 
-files = connection.fetch('/remote/dir/path') # Create local copies of child files at specified remote path
+connection.fetch('/remote/dir/path') # Create local copies of child files at specified remote path
 
 transform_file('ExampleFile.txt') # Transform local file 
 
