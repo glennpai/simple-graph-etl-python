@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name='simple_graph_etl',
     packages=find_packages(include=['simple_graph_etl']),
-    version='1.0.0',
+    version='1.1.0',
     description="Minimal wrapper lib for Python ETLs using Microsoft's Graph API",
     author='glennpai / chglenn20@gmail.com',
     license='MIT',
