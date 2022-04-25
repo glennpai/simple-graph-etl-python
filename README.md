@@ -1,5 +1,10 @@
 # simple-graph-etl
 
+## NOTE
+This project has been moved into Ohio University's GitHub Enterprise project space. As such, this repo will not be updated as frequently until the full release of the package. It will then be cloned back to this repo for historical / showcase purposes. 
+
+---
+
 Minimal wrapper lib for Python ETLs using Microsoft's Graph API
 
 Designed with intent for use in Ohio University Python scripts interacting with the Graph API
